@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="295.0" prefWidth="420.0" style="-fx-background-image:url(/img/loginBackGround.jpg)" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children> 
+      <Button fx:id="btn_clear" layoutX="98.0" layoutY="190.0" mnemonicParsing="false" onAction="#clear" text="清除">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="222.0" layoutY="190.0" mnemonicParsing="false" onAction="#login" text="登录">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tf_userName" layoutX="127.0" layoutY="102.0" promptText="用户名" />
+      <TextField fx:id="tf_password" layoutX="127.0" layoutY="148.0" promptText="密码"  />
+      <Label layoutX="52.0" layoutY="102.0" text="用户名：">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="150.0" text="密码：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

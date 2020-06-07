@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="896.0" prefWidth="1289.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+	<children>
+		<TabPane layoutY="34.0" prefHeight="862.0" prefWidth="1289.0" tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab text="Untitled Tab 1">
+					<content>
+						<AnchorPane prefHeight="762.0" prefWidth="1287.0" style="-fx-background-image: url(/img/employeeManageBackGround.jpg);">
+							<children>
+								<TableView fx:id="tabView_employeeTab" layoutX="6.0" layoutY="139.0" prefHeight="695.0" prefWidth="742.0">
+									<columns>
+										<TableColumn fx:id="tabCol_employeeId" prefWidth="150.0" text="员工编号" />
+										<TableColumn fx:id="tabCol_employeeName" minWidth="0.0" prefWidth="114.0" text="姓名" />
+										<TableColumn fx:id="tabCol_employeeGender" prefWidth="95.0" text="性别" />
+										<TableColumn fx:id="tabCol_employeeSection" prefWidth="107.0" text="部门" />
+										<TableColumn fx:id="tabCol_employeePosi" prefWidth="142.0" text="岗位" />
+										<TableColumn fx:id="tabCol_employeeLevel" prefWidth="133.0" text="工资等级" />
+									</columns>
+								</TableView>
+								<TextField layoutX="197.0" layoutY="92.0" />
+								<TextField layoutX="408.0" layoutY="92.0" />
+								<Button layoutX="603.0" layoutY="87.0" mnemonicParsing="false" text="查询">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Button>
+                        <Button fx:id="btn_clearQ" layoutX="675.0" layoutY="87.0" mnemonicParsing="false" text="清除">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="57.0" layoutY="42.0" text="查询：" textFill="#579c6c">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="145.0" layoutY="94.0" text="姓名：">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="366.0" layoutY="94.0" text="性别：">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="comboBox_EmId" layoutX="875.0" layoutY="92.0" prefWidth="150.0" />
+                        <Label layoutX="770.0" layoutY="47.0" text="删除：" textFill="#d71d1d">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="796.0" layoutY="94.0" text="员工编号：">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_del" layoutX="1061.0" layoutY="89.0" mnemonicParsing="false" onAction="#delEmByid" text="删除">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <TextField layoutX="900.0" layoutY="417.0" />
+                        <TextField layoutX="900.0" layoutY="487.0" />
+                        <TextField layoutX="900.0" layoutY="562.0" />
+                        <TextField layoutX="900.0" layoutY="299.0" />
+                        <TextField layoutX="900.0" layoutY="247.0" />
+                        <Label layoutX="770.0" layoutY="191.0" text="添加：" textFill="#3700ff">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="831.0" layoutY="251.0" text="员工编号：" />
+                        <Label layoutX="831.0" layoutY="303.0" text="姓名：" />
+                        <Label layoutX="831.0" layoutY="368.0" text="性别：" />
+                        <Label layoutX="831.0" layoutY="421.0" text="部门：" />
+                        <Label layoutX="831.0" layoutY="491.0" text="岗位：" />
+                        <Label layoutX="831.0" layoutY="566.0" text="工资等级：" />
+                        <ChoiceBox fx:id="choicebox_gender" layoutX="900.0" layoutY="364.0" prefHeight="23.0" prefWidth="162.0" />
+                        <Button fx:id="btn_clearA" layoutX="843.0" layoutY="640.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="65.0" text="清除" />
+                        <Button layoutX="1041.0" layoutY="640.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="60.0" text="添加" />
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab text="Untitled Tab 2">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+      <MenuBar layoutY="-2.0" prefHeight="39.0" prefWidth="1289.0" style="-fx-background-image: url(/img/menuBarBackGround.jpg);">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+	</children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="931.0" prefWidth="1287.0" style="-fx-background-image: url(/img/employeeManageBackGround.jpg);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeManageController">
+   <children>
+      <TableView layoutY="157.0" prefHeight="775.0" prefWidth="742.0">
+        <columns>
+          <TableColumn prefWidth="150.0" text="员工编号" />
+          <TableColumn minWidth="0.0" prefWidth="114.0" text="姓名" />
+            <TableColumn prefWidth="95.0" text="性别" />
+            <TableColumn prefWidth="107.0" text="部门" />
+            <TableColumn prefWidth="142.0" text="岗位" />
+            <TableColumn prefWidth="133.0" text="工资等级" />
+        </columns>
+      </TableView>
+      <TextField layoutX="197.0" layoutY="92.0" />
+      <TextField layoutX="408.0" layoutY="92.0" />
+      <Button layoutX="622.0" layoutY="92.0" mnemonicParsing="false" text="查询" />
+      <Label layoutX="107.0" layoutY="58.0" prefHeight="23.0" prefWidth="55.0" text="查询：" textFill="#232822">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="96.0" text="编号：">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="367.0" layoutY="96.0" text="姓名：">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
